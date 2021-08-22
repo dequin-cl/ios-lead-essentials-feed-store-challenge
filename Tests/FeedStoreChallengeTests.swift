@@ -164,29 +164,4 @@ class FeedStoreChallengeTests: XCTestCase, FailableFeedStoreSpecs {
 		trackForMemoryLeaks(sut, file: file, line: line)
 		return sut
 	}
-//
-//
-//	override func setUp() {
-//		super.setUp()
-//
-//		setUpEmptyStoreState()
-//	}
-//
-//	override func tearDown() {
-//		super.tearDown()
-//
-//		undoStoreSideEffects()
-//	}
-//
-//	private func setUpEmptyStoreState() {
-//		deleteStoreArtifacts()
-//	}
-//
-//	private func undoStoreSideEffects() {
-//		deleteStoreArtifacts()
-//	}
-//
-//	private func deleteStoreArtifacts() {
-//		try? FileManager.default.removeItem(at: URL(fileURLWithPath: "/dev/null"))
-//	}
 }
