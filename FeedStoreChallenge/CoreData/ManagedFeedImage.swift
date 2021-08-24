@@ -1,12 +1,12 @@
 import CoreData
 
 @objc(ManagedFeedImage)
-class ManagedFeedImage: NSManagedObject {
+final class ManagedFeedImage: NSManagedObject {
 	@NSManaged internal var id: UUID
 	@NSManaged internal var imageDescription: String?
 	@NSManaged internal var location: String?
 	@NSManaged internal var url: URL
-	@NSManaged internal var cache: ManagedCache
+	@NSManaged internal var cache: ManagedCache?
 }
 
 extension ManagedFeedImage {
